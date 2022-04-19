@@ -5,6 +5,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -35,6 +37,7 @@ public class ChatServer {
             ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
             ReaderAndWriter escritaLeitura = new ReaderAndWriter();
+            ArrayList lista = new ArrayList();
 
             String arq = "Arquivo.txt";
             while (true) {
@@ -47,10 +50,14 @@ public class ChatServer {
                 //ENVIA MSG 
                 output.writeUTF(msg);
                 output.flush();
-
-                escritaLeitura.Write(arq, msg);
-                System.out.println("Arquivo salvo");
-
+                
+                lista.add("Mensagem do Cliente: " + socket.getRemoteSocketAddress() + "  :" + msg);
+                escritaLeitura.Write(arq, " "+ lista);
+               
+                for (int c = 0; c < lista.size();c ++){
+                    escritaLeitura.Write(arq, " "+ lista);
+                }System.out.println("Arquivo salvo");
+                
 
             }
             

@@ -16,7 +16,7 @@ public class ReaderAndWriter {
             FileWriter arq = new FileWriter(Caminho);
             PrintWriter gravarArq = new PrintWriter(arq);
             //gravarArq.println(Texto);
-            gravarArq.println(Texto);
+            gravarArq.println(Texto + "\r\n");
             gravarArq.close();
 
         } catch (IOException e) {
