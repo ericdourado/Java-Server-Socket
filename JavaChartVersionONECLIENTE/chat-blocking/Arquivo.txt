@@ -51,3 +51,30 @@ Mensagem do Cliente:/127.0.0.1:57421: mizeravel
 Mensagem do Servidor: localhost/127.0.0.1:5555 miss
 
 11:24 PM 4/19/2022
+Mensagem do Servidor: localhost/127.0.0.1:5555 teste
+Mensagem do Servidor: localhost/127.0.0.1:5555 aff
+Mensagem do Servidor: localhost/127.0.0.1:5555 mano
+Mensagem do Servidor: localhost/127.0.0.1:5555 ola
+Mensagem do Servidor: localhost/127.0.0.1:5555 cara
+Mensagem do Cliente:/127.0.0.1:54598: terra
+Mensagem do Servidor: localhost/127.0.0.1:5555 È
+Mensagem do Cliente:/127.0.0.1:54598: È
+Mensagem do Servidor: localhost/127.0.0.1:5555 vish
+Mensagem do Cliente:/127.0.0.1:54598: nada
+Mensagem do Servidor: localhost/127.0.0.1:5555 ok
+Mensagem do Cliente:/127.0.0.1:54598: sair
+Mensagem do Servidor: localhost/127.0.0.1:5555 ok
+Mensagem do Cliente:/127.0.0.1:60739: oi
+Mensagem do Servidor: localhost/127.0.0.1:5555 hello
+Mensagem do Cliente:/127.0.0.1:60739: ÈNada
+Mensagem do Servidor: localhost/127.0.0.1:5555 vish
+Mensagem do Cliente:/127.0.0.1:60739: ahahaha
+Mensagem do Servidor: localhost/127.0.0.1:5555 blabla
+Mensagem do Cliente:/127.0.0.1:60739: sair
+Mensagem do Servidor: localhost/127.0.0.1:5555 ok
+Mensagem do Cliente:/127.0.0.1:54885: teste
+Mensagem do Servidor: localhost/127.0.0.1:5555 testando
+Mensagem do Cliente:/127.0.0.1:54885: alo
+Mensagem do Servidor: localhost/127.0.0.1:5555 opa
+Mensagem do Cliente:/127.0.0.1:54885: sair
+Mensagem do Servidor: localhost/127.0.0.1:5555 ok

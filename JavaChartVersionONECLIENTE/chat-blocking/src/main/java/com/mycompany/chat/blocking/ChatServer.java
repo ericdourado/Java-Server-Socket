@@ -5,10 +5,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
 
 /**
  *
@@ -25,46 +22,40 @@ public class ChatServer {
     private Socket esperaConexao() throws IOException {
         Socket socket = serverSocket.accept();
         return socket;
-
     }
 
     private void trataConexao(Socket socket) throws IOException {
-        
-        
-        
+
         try {
 
             //OBJETOS DE ENTRADA E SAÍDA
             ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+            //Salvar em arquivo texto
             ReaderAndWriter escritaLeitura = new ReaderAndWriter();
+            //Scanner
             Scanner scanner = new Scanner(System.in);
+            //Criar arquivo texto
             String arq = "Arquivo.txt";
             while (true) {
 
-                //MENSAGENS DO CLIENTE 1
+                //MENSAGENS DO CLIENTE 
                 //RECEBE MSG 
                 String receptor = input.readUTF();
                 System.out.println("Mensagem do Cliente: " + socket.getRemoteSocketAddress() + "  :" + receptor);
-                
+
                 //DIGITAR MSG PARA ENVIAR PRO SERVIDOR
                 System.out.print("Digite: ");
                 String msg = scanner.next();
-                
+
                 //ENVIA MSG 
                 output.writeUTF(msg);
                 output.flush();
-                
-                
+
                 //ESCREVER MSG
-                escritaLeitura.Write(arq,"Mensagem do Cliente:"  + socket.getRemoteSocketAddress() + ": " +receptor);
-                
-                
-                
-               
+                escritaLeitura.Write(arq, "Mensagem do Cliente:" + socket.getRemoteSocketAddress() + ": " + receptor);
 
             }
-            
 
         } catch (IOException ex) {
             //Trata Conexão

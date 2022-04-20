@@ -22,8 +22,11 @@ public class ChatClient {
         //Cria objetos de streams de inputs e outputs
         ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
         ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
+        
         ReaderAndWriter escritaLeitura = new ReaderAndWriter();
+        
         String arq = "Arquivo.txt";
+        
         System.out.print("Digite uma mensagem (ou 'sair' para finalizar):\n");  
         do{
             
@@ -35,12 +38,13 @@ public class ChatClient {
             output.writeUTF(msg);
             output.flush();
             
-            
             //Recebe msg do servidor
             msgreceptora = input.readUTF();
             System.out.println("Mensagem do Servidor: "+socket.getRemoteSocketAddress() +" " + msgreceptora);
             
             escritaLeitura.Write(arq,"Mensagem do Servidor: "+socket.getRemoteSocketAddress() +" " + msgreceptora );
+            
+            
             
            
         }while(!msg.equalsIgnoreCase("sair"));
