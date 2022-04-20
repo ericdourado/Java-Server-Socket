@@ -13,10 +13,10 @@ public class ReaderAndWriter {
     //GRAVAR ARQUIVO
     public void Write(String Caminho, String Texto) {
         try {
-            FileWriter arq = new FileWriter(Caminho);
+            FileWriter arq = new FileWriter(Caminho,true);
             PrintWriter gravarArq = new PrintWriter(arq);
             //gravarArq.println(Texto);
-            gravarArq.println(Texto + "\r\n");
+            gravarArq.println(Texto);
             gravarArq.close();
 
         } catch (IOException e) {

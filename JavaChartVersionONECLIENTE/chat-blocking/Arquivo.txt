@@ -1,3 +1,53 @@
+.LOG 04/19/2022 11:04Mensagem do Cliente:/127.0.0.1:57419: OLA
 
-[Mensagem do Cliente: /127.0.0.1:53290  :teste, Mensagem do Cliente: /127.0.0.1:53290  :terra, Mensagem do Cliente: /127.0.0.1:53290  :ufa, Mensagem do Cliente: /127.0.0.1:53290  :mizeravel, Mensagem do Cliente: /127.0.0.1:53290  :bla, Mensagem do Cliente: /127.0.0.1:53290  :blablalbllaslfoajfouasdhfouhaj]
+Mensagem do Servidor: localhost/127.0.0.1:5555 OLA
 
+Mensagem do Cliente:/127.0.0.1:57419: SERVER
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 CLIENTE
+
+Mensagem do Cliente:/127.0.0.1:57419: TERRA
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 OLA
+
+Mensagem do Cliente:/127.0.0.1:57419: SAIR
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 ok
+
+Mensagem do Cliente:/127.0.0.1:57420: ola
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 ola
+
+Mensagem do Cliente:/127.0.0.1:57420: server
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 cliente
+
+
+11:09 PM 4/19/2022
+Mensagem do Cliente:/127.0.0.1:57421: ixi
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 qualfoi
+
+Mensagem do Cliente:/127.0.0.1:57421: fala
+
+Mensagem do Servidor: localhost/127.0.0.1:5555 hã
+
+
+11:10 PM 4/19/2022
+Mensagem do Cliente:/127.0.0.1:57427: é
+Mensagem do Servidor: localhost/127.0.0.1:5555 nada
+
+11:11 PM 4/19/2022
+Mensagem do Cliente:/127.0.0.1:57427: qual
+Mensagem do Servidor: localhost/127.0.0.1:5555 é
+Mensagem do Cliente:/127.0.0.1:57427: foi
+Mensagem do Servidor: localhost/127.0.0.1:5555 ufa
+Mensagem do Cliente:/127.0.0.1:57420: eric
+Mensagem do Cliente:/127.0.0.1:57421: terra
+Mensagem do Servidor: localhost/127.0.0.1:5555 eric
+Mensagem do Cliente:/127.0.0.1:57421: renato
+Mensagem do Servidor: localhost/127.0.0.1:5555 ufa
+Mensagem do Cliente:/127.0.0.1:57421: mizeravel
+Mensagem do Servidor: localhost/127.0.0.1:5555 miss
+
+11:24 PM 4/19/2022

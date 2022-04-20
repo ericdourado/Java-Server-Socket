@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 
 /**
@@ -37,27 +38,30 @@ public class ChatServer {
             ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
             ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
             ReaderAndWriter escritaLeitura = new ReaderAndWriter();
-            ArrayList lista = new ArrayList();
-
+            Scanner scanner = new Scanner(System.in);
             String arq = "Arquivo.txt";
             while (true) {
 
                 //MENSAGENS DO CLIENTE 1
                 //RECEBE MSG 
-                String msg = input.readUTF();
-                System.out.println("Mensagem do Cliente: " + socket.getRemoteSocketAddress() + "  :" + msg);
-
+                String receptor = input.readUTF();
+                System.out.println("Mensagem do Cliente: " + socket.getRemoteSocketAddress() + "  :" + receptor);
+                
+                //DIGITAR MSG PARA ENVIAR PRO SERVIDOR
+                System.out.print("Digite: ");
+                String msg = scanner.next();
+                
                 //ENVIA MSG 
                 output.writeUTF(msg);
                 output.flush();
                 
-                lista.add("Mensagem do Cliente: " + socket.getRemoteSocketAddress() + "  :" + msg);
-                escritaLeitura.Write(arq, " "+ lista);
-               
-                for (int c = 0; c < lista.size();c ++){
-                    escritaLeitura.Write(arq, " "+ lista);
-                }System.out.println("Arquivo salvo");
                 
+                //ESCREVER MSG
+                escritaLeitura.Write(arq,"Mensagem do Cliente:"  + socket.getRemoteSocketAddress() + ": " +receptor);
+                
+                
+                
+               
 
             }
             
